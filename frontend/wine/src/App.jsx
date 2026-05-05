@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
@@ -10,6 +7,12 @@ function App() {
   return (
     <div>
       <h1> Wine Passport </h1>
+      <input
+        type="text"
+        placeholder="Wine Name"
+        value={wineName}
+        onChange={(e) => setWineName(e.target.value)}
+      />
     </div>
     )
 }
